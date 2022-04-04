@@ -1,2 +1,14 @@
-<h1>Dealinput</h1>
+<h1>Deal input</h1>
+
+<%= form_with model: @deal, url: deal_input_path do |form| %>
+<div class="mb-3">
+  <%= form.datetime_field :time, class:"form-control", placeholder: "出社時間を入力"%>
+</div>
+<div class="mb-3">
+  <%= form.number_field :money, class:"form-control", placeholder: "賭け金を入力" %>
+</div>
+<div class="mb-3">
+  <%= form.submit "契約する", class:"btn btn-primary" %>
+</div>
+<% end %>
 
