@@ -8,7 +8,7 @@
   <%= form.number_field :money, class:"form-control", placeholder: "賭け金を入力" %>
 </div>
 <div class="mb-3">
-  <%= form.submit "契約する", class:"btn btn-primary" %>
+  <%= form.submit "契約する", class:"btn btn-primary", data: { confirm: '契約をしたら一切変更できません。よろしいですか？' } %>
 </div>
 <% end %>
 
