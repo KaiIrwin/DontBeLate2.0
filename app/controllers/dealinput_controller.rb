@@ -6,7 +6,7 @@ class DealinputController < ApplicationController
   def create
     @deal = Deal.new(deal_params)
     if @deal.save
-      redirect_to root_path, notice: "契約を提携しました"
+      redirect_to result_path, notice: "契約を提携しました"
     else
       render :new
   end

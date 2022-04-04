@@ -1,5 +1,9 @@
 <!--契約時間を過ぎたかどうか and if yes, 罰金 -> そこから罰金を支払うボタン？ でもこれだと強制力ないよね
 and if no then おめでとうって感じやな-->
 
-<h1>Result</h1>
+<h1>Result</h1> </br>
 
+<h3>契約内容</h3>
+<b>契約者:</b> <%=@user.email %> </br>
+<b>覚悟金額:</b> ￥<%=@deal.money %> </br>
+<b>覚悟時間:</b> <%= @deal.time %>
