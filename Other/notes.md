@@ -3,11 +3,9 @@
 - Then そっから本番や
 - logout は navbar menue ではなく ボタンにするべき
 
+## 2022.4.4 ~
+- Log in 作る with gorails
+- make a form for the deal 
+- そっから result で API and 条件分岐とかかか
 # 質問
-- unknown attribute 'password' for User. error
-  - そのままググる 
-    - stack: https://stackoverflow.com/questions/12142374/railstutorial-org-chapter-6-unknown-attribute-password didnt work
-ws
 
-
-i was making a sign up form 
