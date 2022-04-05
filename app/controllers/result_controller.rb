@@ -7,3 +7,9 @@ class ResultController < ApplicationController
     @deal = Deal.last
   end
 end
+
+# [Logic]
+# Slack API を利用して、覚悟時間までに Slack を開いていないと、罰金。(なんかこれ新たな routing が必要な気がする...) 
+# And 覚悟時間までに開いてなかったら何も起こらない。 well, id like to have some kind of cool css effect lol 
+# if the [time you opened slack] is after [覚悟時間 deal.time] => 覚悟金額 deal.money を罰金。And Stripe API かなんかでクレカ情報を抜き取る
+
