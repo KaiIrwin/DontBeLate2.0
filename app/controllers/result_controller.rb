@@ -25,11 +25,11 @@ class ResultController < ApplicationController
     # ここで @Result の値を判定します
 
       if @EarliestActiveTime <= Time.now && Time.now <= @DealTime && @UserPresence = "active"
-        @Result = 'Congrats'
+        @Result = 'おめでとうございます。今日も一日頑張ってください！'
       elsif Time.now < @DealTime
         @Result = '覚悟時間まで待ってください'
       else 
-        @Result = '残念でした'
+        @Result = '￥#{@DealMoney} 請求しました。'
       end 
     end
   end
